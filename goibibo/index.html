@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goibibo</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bs css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bs js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- bs icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- slick thememin.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick min css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- remix icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="ducks">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid ps-4 pe-2">
+            <div class="part1 col-2">
+                <a class="navbar-brand symbol fs-1 fw-bold text-danger" href="#">go<span class="text-primary ">ibibo</span></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="part2 collapse navbar-collapse d-flex justify-content-between col-8 d-sm-none d-none d-md-none" >
+                <ul class="main navbar-nav  d-flex justify-content-between  ">
+                    <li class=" nav-item submain pe-4 ">
+                        <a href="" class="anc nav-link">
+                            <span class="pack"><i class="bi bi-airplane-fill"></i></span>
+                            <span class="car">Flights</span>
+                        </a>
+                    </li>
+                    <li class="nav-item submain pe-4 ">
+                        <a href="" class="anc nav-link">
+                            <span class="pack"><i class="bi bi-buildings-fill"></i></span>
+                            <span class="car">Hotels</span>
+                        </a>
+                    </li>
+                    <li class="nav-item submain pe-4 ">
+                        <a href="" class="anc nav-link">
+                            <span class="pack"><i class="bi bi-train-freight-front-fill"></i></span>
+                            <span class="car">Trains</span>
+                        </a>
+                    </li>
+                    <li class="nav-item submain pe-4 ">
+                        <a href="" class="anc nav-link">
+                            <span class="pack"><i class="bi bi-car-front-fill"></i></span>
+                            <span class="car">Cabs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item submain pe-4 ">
+                        <a href="" class="anc nav-link">
+                            <span class="pack"><i class="bi bi-bus-front-fill"></i></span>
+                            <span class="car">Bus</span>
+                        </a>
+                    </li>
+                    <li class="nav-item submain pe-4 ">
+                        <a href="" class="anc nav-link">
+                            <span class="pack"><i class="bi bi-umbrella-fill"></i></span>
+                            <span class="car">Holidays</span>
+                        </a>
+                    </li>
+                    <li class="nav-item submain pe-4 ">
+                        <a href="" class="anc nav-link">
+                            <span class="pack"><i class="bi bi-bank2"></i></span>
+                            <span class="car">Forex</span>
+                        </a>
+                    </li>
+                    <li class="nav-item submain pe-4 ">
+                        <a href="" class="anc nav-link">
+                            <span class="pack"><i class="bi bi-shield-fill-check"></i></span>
+                            <span class="car">Insurance</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="manage">
+                    <div class="bag d-flex">
+                        <span class="bagicon "><i class="bi bi-suitcase-lg-fill " style="font-size: 25px;" ></i></span>
+                        <span class="travel ps-2">
+                            <div>
+                                <p style="color:#666" class="trips">My Trips</p>
+                                <p style="color:#333" class="book ">Manage Booking</p>
+                            </div>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            
+           <div class="part3 col-2 ps-3 d-none d-sm-none d-md-none  d-lg-block ">
+            <div class="login">
+                <a href="#" class="btn btn-outline-primary loginbox text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                    <span class="pic"><i class="bi bi-person-circle" style="font-size: 25px;"></i></span>
+                    <span class="info">LOGIN/SIGN UP</span>
+                       
+                       
+                    
+                </a>
+                <ul class="inside bg-light ">
+                    <li class="inssub"><h4>Hey Traveller</h4></li>
+                    <li class="inssub"><p>Get exclusive deals & Manage your trips</p></li>
+                    <li class="inssub"> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >Login/Signup</button></li>
+                    <li class="inssub">
+                        <a href="" class="jam text-decoration-none ">
+                        <div class="sharp d-flex">
+                            <span class="disicon pt-2"><i class="bi bi-align-top" style="font-size: 20px;"></i></span>
+                            <span class="cartoon ps-2">
+                                <div>
+                                    <p style="color:#333" class="sum ">go<strong class="text-warning ">T</strong>ribe</p>
+                                    <p style="color:#333" class="sec ">travel more to get enrolled</p>
+                                </div>
+                            </span>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="inssub">
+                        <a href="" class="jam text-decoration-none ">
+                        <div class="sharp d-flex">
+                            <span class="disicon pt-2"><i class="bi bi-patch-check-fill" style="font-size: 20px;"></i></span>
+                            <span class="cartoon ps-2">
+                                <div>
+                                    <p style="color:#333" class="sum ">Offers</p>
+                                    <p style="color:#333" class="sec ">Hand pick  best deals</p>
+                                </div>
+                            </span>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="inssub">
+                        <a href="" class="jam text-decoration-none ">
+                        <div class="sharp d-flex">
+                            <span class="disicon pt-2"><i class="bi bi-suitcase-lg-fill" style="font-size: 20px;"></i></span>
+                            <span class="cartoon ps-2">
+                                <div>
+                                    <p style="color:#333" class="sum ">My trips</p>
+                                    <p style="color:#333" class="sec ">Manage your bookings</p>
+                                </div>
+                            </span>
+                        </div>
+                        </a>
+                    </li><hr>
+                    <li class="inssub">
+                        <a href="" class="jam text-decoration-none ">
+                        <div class="sharp d-flex">
+                            <span class="discoin pt-2"><i class="bi bi-currency-rupee" style="font-size: 20px;"></i></span>
+                            <span class="cartoon ps-2">
+                                <div>
+                                    <p style="color:#333" class="sum ">goCash</p>
+                                    <p style="color:#333" class="sec ">Signup to get $100 goCash</p>
+                                </div>
+                            </span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+           </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modalCenter ">
+                  <div class="modal-content h-75">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body page">
+                        
+                        <div class="perk mb-4">
+                            Login/Signup</div>
+                        <form> 
+                            <div class="mb-3">
+                                <fieldset>
+                                    <legend><input type="tel" class="form-control border-primary " placeholder="+91"></legend>
+                              
+                                </fieldset>
+                            </div>
+                            <button type="button" class="btn btn-success w-100 rounded-1 ">
+                                Continue
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="modal-footer">
+                      <span>By proceeding, you agree to GoIbibo’s <a href="" class="text-decoration-none ">Privacy Policy, User Agreement </a>and <a href="" class="text-decoration-none ">Terms of Service</a></span>
+                    </div>
+                </div>
+                  </div>
+            </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- <div class="part2 collapse navbar-collapse d-flex justify-content-between col-8 d-sm-none d-none " > -->
+                        <ul class="main navbar-nav  d-flex justify-content-between mt-1">
+                            <li class=" nav-item submain pe-4 ">
+                                <a href="" class="anc nav-link">
+                                    <span class="pack"><i class="bi bi-airplane-fill"></i></span>
+                                    <span class="car">Flights</span>
+                                </a>
+                            </li>
+                            <li class="nav-item submain pe-4 ">
+                                <a href="" class="anc nav-link">
+                                    <span class="pack"><i class="bi bi-buildings-fill"></i></span>
+                                    <span class="car">Hotels</span>
+                                </a>
+                            </li>
+                            <li class="nav-item submain pe-4 ">
+                                <a href="" class="anc nav-link">
+                                    <span class="pack"><i class="bi bi-train-freight-front-fill"></i></span>
+                                    <span class="car">Trains</span>
+                                </a>
+                            </li>
+                            <li class="nav-item submain pe-4 ">
+                                <a href="" class="anc nav-link">
+                                    <span class="pack"><i class="bi bi-car-front-fill"></i></span>
+                                    <span class="car">Cabs</span>
+                                </a>
+                            </li>
+                            <li class="nav-item submain pe-4 ">
+                                <a href="" class="anc nav-link">
+                                    <span class="pack"><i class="bi bi-bus-front-fill"></i></span>
+                                    <span class="car">Bus</span>
+                                </a>
+                            </li>
+                            <li class="nav-item submain pe-4 ">
+                                <a href="" class="anc nav-link">
+                                    <span class="pack"><i class="bi bi-umbrella-fill"></i></span>
+                                    <span class="car">Holidays</span>
+                                </a>
+                            </li>
+                            <li class="nav-item submain pe-4 ">
+                                <a href="" class="anc nav-link">
+                                    <span class="pack"><i class="bi bi-bank2"></i></span>
+                                    <span class="car">Forex</span>
+                                </a>
+                            </li>
+                            <li class="nav-item submain pe-4 ">
+                                <a href="" class="anc nav-link">
+                                    <span class="pack"><i class="bi bi-shield-fill-check"></i></span>
+                                    <span class="car">Insurance</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="" class="manage">
+                            <div class="bag d-flex">
+                                <span class="bagicon "><i class="bi bi-suitcase-lg-fill " style="font-size: 25px;" ></i></span>
+                                <span class="travel ps-2">
+                                    <div>
+                                        <p style="color:#666" class="trips">My Trips</p>
+                                        <p style="color:#333" class="book ">Manage Booking</p>
+                                    </div>
+                                </span>
+                            </div>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary loginbox text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                            <span class="pic"><i class="bi bi-person-circle" style="font-size: 25px;"></i></span>
+                            <span class="info">LOGIN/SIGN UP</span>
+                               
+                               
+                            
+                        </a>
+                    <!-- </div> -->
+                </div>
+              </div>
+
+
+         </div>
+            
+        </div>
+
+    </nav>
+    
+    <!-- main box content -->
+    <div class="container  curtain col-12 mt-0  col-sm-12 col-md-12 flex-lg-row  ">
+        <h2 class="seo ">Book Domestic and International Flight Tickets</h2>
+        <div class="come">
+            <div class="scarp mt-4">
+                <div class="ace">
+                    <div class="form-check form-check-inline dot">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label prog" for="inlineRadio1">One way</label>
+                      </div>
+                      <div class="form-check form-check-inline dot">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label prog" for="inlineRadio2">Round-trip</label>
+                      </div>
+                      <div class="form-check form-check-inline dot">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label prog" for="inlineRadio2">Multi-city</label>
+                      </div>      
+                </div>
+                <div class="ace2 col-12 w-100 flex-column flex-wrap flex-md-row flex-lg-row  flex-lg-nowrap ">
+                    <div class="hard  ">
+                        <div class="bell ">
+                            <div class="sound " style="width: 260px;">
+                                <fieldset class="border rounded-3 p-3">
+                                    <legend class="float-none w-auto px-3 charge">Form:</legend>
+                                    <input type="text" id="city1" name="city1" placeholder="Enter city or airport">
+                                </fieldset>
+                            </div>
+                        </div>
+                        <span class=" sign">
+                            <svg width="20" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.11 6.739a.842.842 0 0 1-.842-.842V4.844a.21.21 0 0 0-.21-.211H4.543a1.264 1.264 0 1 1 0-2.527h8.515a.21.21 0 0 0 .21-.21V.841A.843.843 0 0 1 14.544.12l4.212 2.528a.842.842 0 0 1 0 1.444L14.544 6.62a.843.843 0 0 1-.433.12ZM.409 10.26l4.212-2.527a.842.842 0 0 1 1.276.723v1.053c0 .116.095.21.21.21h8.516a1.264 1.264 0 1 1 0 2.528H6.108a.21.21 0 0 0-.21.21v1.053a.842.842 0 0 1-1.277.722L.409 11.705a.842.842 0 0 1 0-1.445Z" fill="#2276E3"></path></svg>
+                        </span>
+                    </div>
+                    <div class="bell">
+                        <div class="sound " style="width: 260px;">
+                            <fieldset class="border rounded-3 p-3">
+                                <legend class="float-none w-auto px-3 charge">To:</legend>
+                                <input type="text" id="city1" name="city1" placeholder="Enter city or airport">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="bell">
+                        <div class="dark ms-2 " style="width: 200px; ">
+                            <fieldset class="border rounded-3 ps-3">
+                                <legend class="float-none w-auto px-3 charge">Departure:</legend>
+                                <input type="date" id="date" name="date"> 
+                                <p class="pt-1">Friday</p>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="bell">
+                        <div class="dark ms-2 " style="width: 200px; ">
+                            <fieldset class="border rounded-3 ps-3">
+                                <legend class="float-none w-auto px-3 charge">Return:</legend>
+                                <input type="date" id="date" name="date" >
+                                <p class="pt-1">Sunday</p>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="bell">
+                        <div class="dark ms-2 " style="width: 200px; ">
+                            <fieldset class="border rounded-3 ps-3">
+                                <legend class="float-none w-auto px-3 charge">Travellers:</legend>
+                                <input type="number" id="num" name="num"> 
+                                <p class="pt-1">Sunday</p>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="ace3 col-12 w-100 flex-column flex-wrap flex-md-row flex-lg-row  flex-lg-nowrap col-lg-6">
+                    <div class="flex2 col-12 w-100 flex-column flex-wrap flex-md-row flex-lg-row  flex-lg-nowrap">
+                        <div class="phone col-lg-12" >
+                            <div class="case">
+                                <div class="ads">
+                                    <font color="#FFFFFF">More Benefits</font>
+                                </div>
+                                <div class="ads1">
+                                    <font color="#222222"><b>Special Fares</b></font>
+                                </div>
+                            </div>
+                            <div class="phone2 col-12 mt-5 w-100  flex-column flex-wrap flex-md-row mt-md-0 flex-lg-row mt-lg-0 flex-lg-nowrap" >
+                                <div class="bat col-12 mt-5 w-25 col-lg- flex-column flex-nowrap flex-md-row mt-md-0 flex-lg-row mt-lg-0 flex-lg-wrap " style="margin-left: 20px;" >
+                                    <input type="radio" name="speacialFare" id="ST" class="core1">
+                                    <label for="ST" class="spin">
+                                        <div class="spinsub"></div>
+                                        <div class="flexsub">
+                                            <img src="images/student-1687501001.avif" width="32" height="32" alt="ST">
+                                            <div class="spark marginL10">
+                                                <div>Student</div>
+                                                <div class="ups">
+                                                <font color="#717171">Extra Baggage</font>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </label>
+                                    <div width="130%" class="subhover">
+                                        <p><font color="#FFFFFF"><b>Student Fare</b></font></p>
+                                        <p><font color="#FFFFFF">Only students above 12 years of age are eligible for special fares and/or additional baggage allowances. Carrying valid student ID cards and student visas (where applicable) is mandatory, else the passenger may be denied boarding or asked to pay for extra baggage.</font></p>
+                                    </div>
+                                </div>
+                                <div class="bat col-12 mt-5 w-25  flex-column flex-wrap flex-md-row mt-md-0 flex-lg-row mt-lg-0  flex-lg-nowrap col-lg-3 " style="margin-left: -60px;">
+                                    <input type="radio" name="senior" id="ST"  class="core1">
+                                    <label for="ST" class="spin">
+                                        <div class="spinsub"></div>
+                                        <div class="flexsub">
+                                            <img src="images/seniorCitizen-1687500989.avif" width="32" height="32" alt="ST">
+                                            <div class="spark marginL10">
+                                                <div>Senior Citizen</div>
+                                                <div class="ups">
+                                                <font color="#717171">Exclusive Discount</font>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </label>
+                                    <div width="130%" class="subhover">
+                                        <p><font color="#FFFFFF"><b>Student Fare</b></font></p>
+                                        <p><font color="#FFFFFF">Only students above 12 years of age are eligible for special fares and/or additional baggage allowances. Carrying valid student ID cards and student visas (where applicable) is mandatory, else the passenger may be denied boarding or asked to pay for extra baggage.</font></p>
+                                    </div>
+                                </div>
+                                <div class="bat  col-12 mt-5 w-25  flex-column flex-wrap flex-md-row mt-md-0 flex-lg-row mt-lg-0 flex-lg-nowrap col-lg-3" style="margin-left: -60px;">
+                                    <input type="radio" name="solider" id="ST" class="core1">
+                                    <label for="ST" class="spin">
+                                        <div class="spinsub"></div>
+                                        <div class="flexsub">
+                                            <img src="images/defence-1687500960.avif" width="32" height="32" alt="ST">
+                                            <div class="spark marginL10">
+                                                <div>Armed Forces</div>
+                                                <div class="ups">
+                                                <font color="#717171">Exclusive Discounts</font>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </label>
+                                    <div width="130%" class="subhover">
+                                        <p><font color="#FFFFFF"><b>Student Fare</b></font></p>
+                                        <p><font color="#FFFFFF">Only students above 12 years of age are eligible for special fares and/or additional baggage allowances. Carrying valid student ID cards and student visas (where applicable) is mandatory, else the passenger may be denied boarding or asked to pay for extra baggage.</font></p>
+                                    </div>
+                                </div>
+                                <div class="bat  col-12 mt-5 w-25 flex-wrap flex-md-row mt-md-0  flex-lg-row mt-lg-0 flex-lg-nowrap justify-content-lg-evenly col-lg-3" style="margin-left: -60px;">
+                                    <input type="radio" name="doctor" id="ST" class="core1">
+                                    <label for="ST" class="spin">
+                                        <div class="spinsub"></div>
+                                        <div class="flexsub">
+                                            <img src="images/doctorNurses-1687500975.avif" width="32" height="32" alt="ST">
+                                            <div class="spark marginL10">
+                                                <div>Doctors & Nurses</div>
+                                                <div class="ups">
+                                                <font color="#717171">Exclusive Discounts</font>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </label>
+                                    <div width="130%" class="subhover">
+                                        <p><font color="#FFFFFF"><b>Student Fare</b></font></p>
+                                        <p><font color="#FFFFFF">Only students above 12 years of age are eligible for special fares and/or additional baggage allowances. Carrying valid student ID cards and student visas (where applicable) is mandatory, else the passenger may be denied boarding or asked to pay for extra baggage.</font></p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="ace4">
+                    <a href=""><button type="button" class="route">SEARCH FLIGHTS</button></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="backsvg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff5500" fill-opacity="1" d="M0,192L120,202.7C240,213,480,235,720,234.7C960,235,1200,213,1320,202.7L1440,192L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+    </div>
+    <div class="container  ac" style="min-height: 600px;">
+        <div class="row cane ">
+            <section class="section1">
+                <div class="picture1">
+                    <div class="picturesub1">
+                        <img src="images/f416e4f6-12db-41fa-9733-a548e65a157f.png" alt="not found" style="width: 100%; height: 100%; border-radius: 12px;">
+                    </div>
+                </div>
+            </section>
+            <section class="section2 ">
+                <div class="row cons1">
+                    <div class="subcons1">
+                        <div class="headp1">
+                            <div class="headp1sub1">
+                                <div class="insideheadsub">Offers For You</div>
+                            </div>
+                            <ul class="headp1sub2">
+                                <li class=" btn-outline-info active  insidesub2">All</li>
+                                <li class=" btn-outline-info   insidesub2">Bank Offers</li>
+                                <li class=" btn-outline-info  insidesub2 ">Flights</li>
+                                <li class=" btn-outline-info  insidesub2">Hotels</li>
+                                <li class=" btn-outline-info  insidesub2">Cabs</li>
+                                <li class=" btn-outline-info  insidesub2">Bus</li>
+                                <li class=" btn-outline-info  insidesub2">Trains</li>
+                                <div class="sc-zdy0j7-5 joint">
+                                    <div class="sc-zdy0j7-6 joint2">
+                                        <a href="#" class="joint3">View All</a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class=" sliderp1">
+                            <div class=" row col-12  sliderp2 " style="padding: 0px 0px 24px 24px; display: flex;">
+                                <div class="sliderp3" style="transform: translate3d(0px, 0px, 0px);">
+                                    <ul class="slide1">
+                                        <li width="" class="slidep1sub1">
+                                            <div class="slidep1sub2">
+                                                <div class="slideimg">
+                                                    <img alt="offer img" src="images/img1.avif" class="slideimg1">
+                                                </div>
+                                                <div class="slidedetail">
+                                                    <p class="subinfode">Domestic Hotels</p>
+                                                    <p class="slideinfo1">Grab FLAT 25% OFF* on Hotels &amp; Homestays!</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="slide1">
+                                        <li width="" class="slidep1sub1">
+                                            <div class="slidep1sub2">
+                                                <div class="slideimg">
+                                                    <img alt="offer img" src="images/img2.avif" class="slideimg1">
+                                                </div>
+                                                <div class="slidedetail">
+                                                    <p class="subinfode">Flights</p>
+                                                    <p class="slideinfo1">Lufthansa Airlines offer discount Up- to INR 5000* one-way.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                   
+                                    <ul class="slide1">
+                                        <li width="" class="slidep1sub1">
+                                            <div class="slidep1sub2">
+                                                <div class="slideimg">
+                                                    <img alt="offer img" src="images/img3.avif" loading="lazy" class="slideimg1">
+                                                </div>
+                                                <div class="slidedetail">
+                                                    <p class="subinfode">Flights</p>
+                                                    <p class="slideinfo1">Lufthansa Airlines offer discount Up- to INR 8000*.</p>
+                                                  
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="slide1">
+                                        <li width="" class="slidep1sub1">
+                                            <div class="slidep1sub2">
+                                                <div class="slideimg">
+                                                    <img alt="offer img" src="images/img4.avif" loading="lazy" class="slideimg1">
+                                                </div>
+                                                <div class="slidedetail">
+                                                    <p class="subinfode">Domestic Hotels</p>
+                                                    <p class="slideinfo1">Up to 30% off on rooms; 15% off on F&amp;B</p>
+                                                   
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="slide1">
+                                        <li width="" class="slidep1sub1">
+                                            <div class="slidep1sub2">
+                                                <div class="slideimg">
+                                                    <img alt="offer img" src="images/img5.avif" loading="lazy" class="slideimg1">
+                                                </div>
+                                                <div class="slidedetail">
+                                                    <p class="subinfode">Flights</p>
+                                                    <p class="slideinfo1">Kerala Special: FLAT 15% OFF on Flight Bookings!</p>
+                                                   
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="slide1">
+                                        <li width="" class="slidep1sub1">
+                                            <div class="slidep1sub2">
+                                                <div class="slideimg">
+                                                    <img alt="offer img" src="images/img6.avif" loading="lazy" class="slideimg1">
+                                                </div>
+                                                <div class="slidedetail">
+                                                    <p class="subinfode">Hotels</p>
+                                                    <p class="slideinfo1">Kerala Special: FLAT 50% OFF on Hotels &amp; Homestays!</p>
+                                                   
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="slide1">
+                                        <li width="" class="slidep1sub1">
+                                            <div class="slidep1sub2">
+                                                <div class="slideimg">
+                                                    <img alt="offer img" src="images/img7.avif" loading="lazy" class="slideimg1">
+                                                </div>
+                                                <div class="slidedetail">
+                                                    <p class="subinfode">Hotels</p>
+                                                    <p class="slideinfo1">Tamil Nadu Special: FLAT 50% OFF on Hotels &amp; Homestays!</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="slide1">
+                                        <li width="" class="slidep1sub1">
+                                            <div class="slidep1sub2">
+                                                <div class="slideimg">
+                                                    <img alt="offer img" src="images/img8.avif" loading="lazy" class="slideimg1">
+                                                </div>
+                                                <div class="slidedetail">
+                                                    <p class="subinfode">Flights</p>
+                                                    <p class="slideinfo1">Tamil Nadu Special: FLAT 15% OFF on Flight Bookings!</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="slide1">
+                                        <li width="" class="slidep1sub1">
+                                            <div class="slidep1sub2">
+                                                <div class="slideimg">
+                                                    <img alt="offer img" src="images/img9.avif" loading="lazy" class="slideimg1">
+                                                </div>
+                                                <div class="slidedetail">
+                                                    <p class="subinfode">Flights</p>
+                                                    <p class="slideinfo1">Air Arabia Offer inaugural discount of *INR 600.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="slide1">
+                                        <li width="" class="slidep1sub1">
+                                            <div class="slidep1sub2">
+                                                <div class="slideimg">
+                                                    <img alt="offer img" src="images/img10.avif" loading="lazy" class="slideimg1">
+                                                </div>
+                                                <div class="slidedetail">
+                                                    <p class="subinfode">Domestic Flights</p>
+                                                    <p class="slideinfo1">Get up to Rs. 2,000* OFF on Domestic Flight bookings</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section3 ">
+                <div class="water1">
+                    <div class="water2">
+                        <div direction="row" width="100%" class="secmain">
+                            <div class="secmain1">
+                                <img src="https://gos3.ibcdn.com/gosafe-1654247477.svg" alt="gosafe" height="61px" width="52px">
+                            </div>
+                            <div class="secinfodel">
+                                <span class="secmaininfo">Read the latest domestic &amp; international travel guidelines here before you travel. Stay safe, travel safe.</span>
+                                <span class="secmaininfo2">Read more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class="sectionpart4">
+        <div class="sec4p1">
+            <p class="sec4p2">Popular Flight Routes</p>
+            <ul class="mainulp1">
+                <li class="submainsec4">
+                    <div class="submainsec4p2"><i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                    </div>
+                    <div class="travelinfo">
+                        <p class="travelinfo2">Delhi Flights</p>
+                        <p class="travelinfo3">
+                            <span class="travelinfo4">
+                                <span>From: <a href="http://www.goibibo.com/flights/mumbai-to-new-delhi-flights/">Mumbai</a>, 
+                                    <a href="http://www.goibibo.com/flights/pune-to-new-delhi-flights/">Pune</a>, 
+                                    <a href="http://www.goibibo.com/flights/bangalore-to-new-delhi-flights/">Bangalore</a>, <a href="http://www.goibibo.com/flights/goa-to-new-delhi-flights/">Goa</a>
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <li class="submainsec4">
+                    <div class="submainsec4p2"><i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                    </div>
+                    <div class="travelinfo">
+                        <p class="travelinfo2">Mumbai Flights</p>
+                        <p class="travelinfo3">
+                            <span class="travelinfo4">
+                                <span>From: <a href="http://www.goibibo.com/flights/new-delhi-to-mumbai-flights/">Delhi</a>, 
+                                    <a href="http://www.goibibo.com/flights/ahmedabad-to-mumbai-flights/">Ahmedabad</a>, 
+                                    <a href="http://www.goibibo.com/flights/bangalore-to-mumbai-flights/">Bangalore</a>, 
+                                    <a href="http://www.goibibo.com/flights/chennai-to-mumbai-flights/">Chennai</a>
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <li class="submainsec4">
+                    <div class="submainsec4p2">
+                        <i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                    </div>
+                    <div class="travelinfo">
+                        <p class="travelinfo2">Bangalore Flights</p>
+                        <p class="travelinfo3">
+                            <span class="travelinfo4"><span>From: <a href="http://www.goibibo.com/flights/mumbai-to-bangalore-flights/">Mumbai</a>, 
+                                <a href="http://www.goibibo.com/flights/kolkata-to-bangalore-flights/">Kolkata</a>, 
+                                <a href="http://www.goibibo.com/flights/new-delhi-to-bangalore-flights/">Delhi</a>, 
+                                <a href="http://www.goibibo.com/flights/pune-to-bangalore-flights/">Pune</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </li>
+            <li class="submainsec4">
+                <div class="submainsec4p2">
+                    <i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                </div>
+                <div class="travelinfo">
+                    <p class="travelinfo2">Goa Flights</p>
+                    <p class="travelinfo3">
+                        <span class="travelinfo4">
+                            <span>From: <a href="http://www.goibibo.com/flights/mumbai-to-goa-flights/">Mumbai</a>, 
+                                <a href="http://www.goibibo.com/flights/pune-to-goa-flights/">Pune</a>, 
+                                <a href="http://www.goibibo.com/flights/new-delhi-to-goa-flights/">Delhi</a>, 
+                                <a href="http://www.goibibo.com/flights/indore-to-goa-flights/">Indore</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </li>
+            <li class="submainsec4">
+                <div class="submainsec4p2">
+                    <i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                </div>
+                <div class="travelinfo">
+                    <p class="travelinfo2">Jaipur Flights</p>
+                    <p class="travelinfo3">
+                        <span class="travelinfo4">
+                            <span>From: <a href="http://www.goibibo.com/flights/mumbai-to-jaipur-flights/">Mumbai</a>, 
+                                <a href="http://www.goibibo.com/flights/ahmedabad-to-jaipur-flights/">Ahmedabad</a>, 
+                                <a href="http://www.goibibo.com/flights/pune-to-jaipur-flights/">Pune</a>, 
+                                <a href="http://www.goibibo.com/flights/bangalore-to-jaipur-flights/">Bangalore</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </li>
+            <li class="submainsec4">
+                <div class="submainsec4p2">
+                    <i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                </div>
+                <div class="travelinfo">
+                    <p class="travelinfo2">Kolkata Flights</p>
+                    <p class="travelinfo3">
+                        <span class="travelinfo4">
+                            <span>From: <a href="http://www.goibibo.com/flights/mumbai-to-kolkata-flights/">Mumbai</a>, 
+                                <a href="http://www.goibibo.com/flights/hyderabad-to-kolkata-flights/">Hyderabad</a>, 
+                                <a href="http://www.goibibo.com/flights/new-delhi-to-kolkata-flights/">Delhi</a>, 
+                                <a href="http://www.goibibo.com/flights/bangalore-to-kolkata-flights/">Bangalore</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </li>
+            <li class="submainsec4">
+                <div class="submainsec4p2">
+                    <i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                </div>
+                <div class="travelinfo">
+                    <p class="travelinfo2">Pune Flights</p>
+                    <p class="travelinfo3">
+                        <span class="travelinfo4">
+                            <span>From: <a href="www.goibibo.com/flights/new-delhi-to-pune-flights/">Delhi</a>, 
+                                <a href="http://www.goibibo.com/flights/kolkata-to-pune-flights/">Kolkata</a>, 
+                                <a href="http://www.goibibo.com/flights/nagpur-to-pune-flights/">Nagpur</a>, 
+                                <a href="http://www.goibibo.com/flights/bangalore-to-pune-flights/">Bangalore</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </li>
+            <li class="submainsec4">
+                <div class="submainsec4p2">
+                    <i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                </div>
+                <div class="travelinfo">
+                    <p class="travelinfo2">Hyderabad Flights</p>
+                    <p class="travelinfo3">
+                        <span class="travelinfo4">
+                            <span>From: <a href="http://www.goibibo.com/flights/mumbai-to-hyderabad-flights/">Mumbai</a>, 
+                                <a href="http://www.goibibo.com/flights/new-delhi-to-hyderabad-flights/">Delhi</a>, 
+                                <a href="http://www.goibibo.com/flights/kolkata-to-hyderabad-flights/">Kolkata</a>, 
+                                <a href="http://www.goibibo.com/flights/bangalore-to-hyderabad-flights/">Bangalore</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </li>
+            <li class="submainsec4">
+                <div class="submainsec4p2">
+                    <i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                </div>
+                <div class="travelinfo">
+                    <p class="travelinfo2">Chennai Flights</p>
+                    <p class="travelinfo3">
+                        <span class="travelinfo4">
+                            <span>From: <a href="http://www.goibibo.com/flights/mumbai-to-chennai-flights/">Mumbai</a>, 
+                                <a href="http://www.goibibo.com/flights/hyderabad-to-chennai-flights/">Hyderabad</a>, 
+                                <a href="http://www.goibibo.com/flights/new-delhi-to-chennai-flights/">Delhi</a>, 
+                                <a href="http://www.goibibo.com/flights/coimbatore-to-chennai-flights/">Coimbatore</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </li>
+            <li class="submainsec4">
+                <div class="submainsec4p2">
+                    <i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                </div>
+                <div class="travelinfo">
+                    <p class="travelinfo2">Ahmedabad Flights</p>
+                    <p class="travelinfo3">
+                        <span class="travelinfo4">
+                            <span>From: <a href="https://www.goibibo.com/flights/new-delhi-to-ahmedabad-flights/">Delhi</a>, 
+                                <a href="https://www.goibibo.com/flights/mumbai-to-ahmedabad-flights/">Mumbai</a>, 
+                                <a href="https://www.goibibo.com/flights/bangalore-to-ahmedabad-flights/">Bangalore</a>, 
+                                <a href="https://www.goibibo.com/flights/pune-to-ahmedabad-flights/">Pune</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </li>
+            <li class="submainsec4">
+                <div class="submainsec4p2">
+                    <i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                </div>
+                <div class="travelinfo">
+                    <p class="travelinfo2">Patna Flights</p>
+                    <p class="travelinfo3">
+                        <span class="travelinfo4">
+                            <span>From: <a href="http://www.goibibo.com/flights/new-delhi-to-patna-flights/">Delhi</a>, 
+                                <a href="http://www.goibibo.com/flights/bangalore-to-patna-flights/">Bangalore</a>, 
+                                <a href="http://www.goibibo.com/flights/mumbai-to-patna-flights/">Mumbai</a>, 
+                                <a href="http://www.goibibo.com/flights/kolkata-to-patna-flights/">Kolkata</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </li>
+            <li class="submainsec4">
+                <div class="submainsec4p2">
+                    <i class="ri-flight-takeoff-fill" style="font-size: 22px;"></i>
+                </div>
+                <div class="travelinfo">
+                    <p class="travelinfo2">Lucknow Flights</p>
+                    <p class="travelinfo3">
+                        <span class="travelinfo4">
+                            <span>From: <a href="http://www.goibibo.com/flights/new-delhi-to-lucknow-flights/">Delhi</a>, 
+                                <a href="http://www.goibibo.com/flights/mumbai-to-lucknow-flights/">Mumbai</a>, 
+                                <a href="http://www.goibibo.com/flights/bangalore-to-lucknow-flights/">Bangalore</a>, 
+                                <a href="http://www.goibibo.com/flights/pune-to-lucknow-flights/">Pune</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <p class="mainpara">Flight Booking FAQs</p>
+    <div class="subparap1">
+        <p class="subpara2 makeFlex active">What are the advantages of online flight booking?<!-- -->&nbsp;</p>
+        <div class="subpara3 active">
+            <p>Through online air ticket booking you can easily compare prices of multiple airlines to get your air tickets at lowest rates. Also, it is easy to do <a href="https://www.goibibo.com/flights/">online flight booking</a> as multiple payment options are available on websites like Goibibo.</p>
+        </div>
+    </div>
+    <div class="subparap1">
+        <p class="subpara2 makeFlex active">When should I book to get best flight ticket prices?<!-- -->&nbsp;</p>
+        <div class="subpara3 active">For best flight ticket prices and flight ticket offers, it is recommended to book at least 3 to 4 weeks in advance for domestic air tickets. For international flight ticket it is recommended to book at least 7 to 8 weeks in advance, so that you can get the best flight ticket prices.
+        </div>
+    </div>
+    <div class="subparap1">
+        <p class="subpara2 makeFlex active">How can I book flight tickets online?<!-- -->&nbsp;</p>
+        <div class="subpara3 active">
+            <p>With the help of Goibibo, you can easily book both domestic flight tickets and <a href="https://www.goibibo.com/international-flights/">international air tickets</a> in simple steps within a few seconds.
+            </p>	  
+        </div>
+    </div>
+    <div class="subparap1">
+        <p class="subpara2 makeFlex active">Why should I make a flight booking from Goibibo?<!-- -->&nbsp;</p>
+        <div class="subpara3 active">
+            <p>Along with an easy flight booking process, <a href="https://www.goibibo.com/offers/flight-offers/">Goibibo offers</a> various discounts, instant EMI options and credit/ debit card related offers on flight booking. By availing such benefits, you can book air tickets at reasonable prices.
+            </p>
+        </div>
+    </div>
+    <div class="subparap1">
+        <p class="subpara2 makeFlex active">In how much time, my flight booking will get confirmed?<!-- -->&nbsp;</p>
+        <div class="subpara3 active">After completing the air ticket booking process on Goibibo, you will get an instant confirmation mail and a message on the registered number and email id respectively.
+        </div>
+    </div>
+    <div class="subparap1">
+        <p class="subpara2 makeFlex active">What are some of the popular flight routes?<!-- -->&nbsp;</p>
+        <div class="subpara3 active">
+            <p>Some of the popular domestic flight routes are:<br><br>- 
+                <a href="https://www.goibibo.com/flights/new-delhi-to-mumbai-flights/">Delhi to Mumbai Flights
+                </a><br><br>- 
+                <a href="https://www.goibibo.com/flights/new-delhi-to-bangalore-flights/">Delhi to Bangalore Flights</a><br><br>- 
+                <a href="https://www.goibibo.com/flights/mumbai-to-bangalore-flights/">Mumbai to Bangalore Flights
+                </a><br><br>- 
+                <a href="https://www.goibibo.com/flights/pune-to-new-delhi-flights/">Pune to Delhi Flights</a><br><br>- 
+                <a href="https://www.goibibo.com/flights/new-delhi-to-goa-flights/">Delhi to Goa Flights</a><br><br>Some of the popular international flight routes are:<br><br>- 
+                <a href="https://www.goibibo.com/international-flights/new-delhi-to-dubai-flights/">Delhi to Dubai Flights</a><br><br>- 
+                <a href="https://www.goibibo.com/international-flights/kolkata-to-bangkok-flights/">Kolkata to Bangkok Flights</a><br><br>- <a href="https://www.goibibo.com/international-flights/mumbai-to-hong-kong-flights/">Mumbai to Hong Kong Flights</a><br><br>- <a href="https://www.goibibo.com/international-flights/new-delhi-to-bangkok-flights/">Delhi to Bangkok Flights</a><br><br>- <a href="https://www.goibibo.com/international-flights/new-delhi-to-singapore-flights/">Delhi to Singapore Flights</a>
+            </p>
+	    </div>
+    </div>
+            <div class="subparap1">
+                <p class="subpara2 makeFlex active">Which are the popular airlines for air travel?<!-- -->&nbsp;</p>
+                <div class="subpara3 active">
+                    <p>Some of the popular airlines for domestic travel are:<br><br>- 
+                        <a href="https://www.goibibo.com/airlines/indigo/">Indigo Airlines</a><br><br>- 
+                        <a href="https://www.goibibo.com/airlines/air-india/">Air India Airlines</a><br><br>- 
+                        <a href="https://www.goibibo.com/airlines/spicejet/">SpiceJet Airlines</a><br><br>- 
+                        <a href="https://www.goibibo.com/airlines/goair/">GoAir Airlines</a><br><br>- 
+                        <a href="https://www.goibibo.com/airlines/airasia/">AirAsia Airlines</a><br><br>Some of the popular airlines for international travel are:<br><br>- 
+                        <a href="https://www.goibibo.com/airlines/emirates-airlines/">Emirates Airlines</a><br><br>- 
+                        <a href="https://www.goibibo.com/airlines/singapore-airlines/">Singapore Airlines</a><br><br>- 
+                        <a href="https://www.goibibo.com/airlines/thai-airways/">Thai Airlines</a><br><br>- 
+                        <a href="https://www.goibibo.com/airlines/lufthansa/">Lufthansa Airlines</a><br><br>- 
+                        <a href="https://www.goibibo.com/airlines/qatar-airways/">Qatar Airways</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div style="margin-top:24px">
+            <div class="awesome">
+                <footer class="footer">
+                    <div class="footer-container">
+                        <div class="bell1">
+                            <div role="presentation" class="footer-links">
+                                <ul>
+                                    <li>
+                                        <p class="footerpara">our products</p>
+                                    </li>
+                                    <li><a href="/hotels/"><p class="footpara2">Domestic Hotels</p></a></li>
+                                    <li><a href="/hotels-international/"><p class="footpara2">International Hotels</p></a></li>
+                                    <li><a href="/flights/"><p class="footpara2">Domestic Flights</p></a></li>
+                                    <li><a href="/international-flights/"><p class="footpara2">International Flights</p></a></li>
+                                    <li><a href="/multicity-flights/"><p class="footpara2">Multi-City Flights</p></a></li>
+                                    <li><a href="/cfhotels/"><p class="footpara2">Couple Friendly Hotels</p></a></li>
+                                    <li><a href="/hotels/"><p class="footpara2">Nearby Getaways</p></a></li>
+                                    <li><a href="/bus/"><p class="footpara2">Bus Booking</p></a></li>
+                                    <li><a href="/cars/"><p class="footpara2">Cab Booking</p></a></li>
+                                    <li><a href="/cars/airport-cabs/"><p class="footpara2">Airport Cabs Booking</p></a></li>
+                                    <li><a href="/cars/"><p class="footpara2">Outstation Cabs Booking</p></a></li>
+                                    <li><a href="/trains/"><p class="footpara2">Train Booking</p></a></li>
+                                    <li><a href="/gostays/"><p class="footpara2">Go Stay</p></a></li>
+                                    <li><a href="https://www.tripmoney.com/"><p class="footpara2">Trip Money</p></a></li>
+                                    <li><a href="https://advertising.goibibo.com/ad/solutions/"><p class="footpara2">Goibibo Advertising Solutions</p></a></li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="footerpara">about us</p>
+                                    </li>
+                                    <li><a href="/aboutus/"><p class="footpara2">About Us</p></a></li>
+                                    <li><a href="/info/investors-overview/"><p class="footpara2">Investor Relations</p></a></li>
+                                    <li><a href="/management/"><p class="footpara2">Management</p></a></li>
+                                    <li><a href="/info/terms-of-services/"><p class="footpara2">Terms of Services</p></a></li>
+                                    <li><a href="/info/user-agreement/"><p class="footpara2">User Agreement</p></a></li>
+                                    <li><a href="/info/privacy/"><p class="footpara2">Privacy</p></a></li>
+                                    <li><a href="/careers/" target="_blank" rel="noreferrer"><p class="footpara2">Careers</p></a></li>
+                                    <li><a href="https://www.youtube.com/user/goibibo" target="_blank" rel="noreferrer"><p class="footpara2">YouTube Channel</p></a></li>
+                                    <li><a href="https://tech.goibibo.com/" target="_blank" rel="noreferrer"><p class="footpara2">Technology@Goibibo</p></a></li>
+                                    <li><a href="/mysupport/customerHelp/"><p class="footpara2">Customer Support</p></a></li>
+                                    <li><a href="https://www.facebook.com/Goibibo/" target="_blank" rel="noreferrer"><p class="footpara2">Facebook Page</p></a></li>
+                                    <li><a href="https://twitter.com/goibibo" target="_blank" rel="noreferrer"><p class="footpara2">Twitter Handle</p></a></li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="footerpara">travel essentials</p>
+                                    </li>
+                                    <li><a href="/trains/check-pnr-status/"><p class="footpara2">PNR Status</p></a></li>
+                                    <li><a href="/offers/"><p class="footpara2">Offers</p></a></li>
+                                    <li><a href="/flights/city-to-city-airlines/"><p class="footpara2">Airline Routes</p></a></li>
+                                    <li><a href="/trains/check-train-running-status/"><p class="footpara2">Train Running Status</p></a></li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="footerpara">more links</p>
+                                    </li>
+                                    <li><a href="/flights/cheap-flights/"><p class="footpara2">Cheap Flights</p></a></li>
+                                    <li><a href="/hotels/hotels-near-me/"><p class="footpara2">Hotels Near Me</p></a></li>
+                                    <li><a href="/mysupport/trips/"><p class="footpara2">My Bookings</p></a></li>
+                                    <li><a href="/mysupport/trips/"><p class="footpara2">Cancellation</p></a></li>
+                                    <li><a href="/myaccount/settings/"><p class="footpara2">My Account</p></a></li>
+                                    <li><a href="/myaccount/gocash/"><p class="footpara2">Wallet</p></a></li>
+                                    <li><a href="https://advertising.goibibo.com/ad/solutions/"><p class="footpara2">Advertise with Us</p></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bell2">
+                            <div class="footer-dl">
+                                <div>
+                                    <ul>
+                                        <li>Popular Flight Sectors</li>
+                                        <li><a href="https://www.goibibo.com/flights/kolkata-to-delhi-flights/">Kolkata to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/hyderabad-to-delhi-flights/">Hyderabad to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/chennai-to-hyderabad-flights/">Chennai to Hyderabad Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-guwahati-flights/">Delhi to Guwahati Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/lucknow-to-delhi-flights/">Lucknow to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/nagpur-to-mumbai-flights/">Nagpur to Mumbai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/ranchi-to-delhi-flights/">Ranchi to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/ahmedabad-to-goa-flights/">Ahmedabad to Goa Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-chandigarh-flights/">Mumbai to Chandigarh Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/pune-to-kolkata-flights/">Pune to Kolkata Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bangalore-to-bhubaneswar-flights/">Bangalore to Bhubaneshwar Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bangalore-to-guwahati-flights/">Bangalore to Guwahati Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/chennai-to-goa-flights/">Chennai to Goa Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/chennai-to-kolkata-flights/">Chennai to Kolkata Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-jaipur-flights/">Delhi to Jaipur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-leh-flights/">Delhi to Leh Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/hyderabad-to-goa-flights/">Hyderabad to Goa Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bangalore-to-ranchi-flights/">Bangalore to Ranchi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-siliguri-flights/">Delhi to Bagdogra Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/srinagar-to-delhi-flights/">Srinagar to Delhi Flight<!-- --> </a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>Top Routes</li>
+                                        <li><a href="https://www.goibibo.com/flights/chandigarh-to-delhi-flights/">Chandigarh to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-bhopal-flights/">Delhi to Bhopal Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-dehradun-flights/">Delhi to Dehradun Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-udaipur-flights/">Delhi to Udaipur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/hyderabad-to-tirupati-flights/">Hyderabad to Tirupati Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/kolkata-to-chennai-flights/">Kolkata to Chennai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/kolkata-to-guwahati-flights/">Kolkata to Guwahati Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-amritsar-flights/">Mumbai to Amritsar Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-dehradun-flights/">Mumbai to Dehradun Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/indore-to-goa-flights/">Indore to Goa Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/jaipur-to-delhi-flights/">Jaipur to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/kolkata-to-siliguri-flights/">Kolkata to Bagdogra Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/patna-to-bangalore-flights/">Patna to Bangalore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/varanasi-to-delhi-flights/">Varanasi to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/ahmedabad-to-kolkata-flights/">Ahmedabad to Kolkata Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-gorakhpur-flights/">Delhi to Gorakhpur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/guwahati-to-kolkata-flights/">Guwahati to Kolkata Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/indore-to-bangalore-flights/">Indore to Bangalore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/jaipur-to-pune-flights/">Jaipur to Pune Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-raipur-flights/">Mumbai to Raipur Flight<!-- --> </a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>Popular Domestic Routes</li>
+                                        <li><a href="https://www.goibibo.com/flights/patna-to-kolkata-flights/">Patna to Kolkata Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/ranchi-to-bangalore-flights/">Ranchi to Bangalore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/patna-to-delhi-flights/">Patna to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bangalore-to-goa-flights/">Bangalore to Goa Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-ranchi-flights/">Delhi to Ranchi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/pune-to-nagpur-flights/">Pune to Nagpur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/chennai-to-coimbatore-flights/">Chennai to Coimbatore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-srinagar-flights/">Delhi to Srinagar Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/goa-to-mumbai-flights/">Goa to Mumbai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/hyderabad-to-bangalore-flights/">Hyderabad to Bangalore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/indore-to-delhi-flights/">Indore to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/kolkata-to-mumbai-flights/">Kolkata to Mumbai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-nagpur-flights/">Mumbai to Nagpur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-varanasi-flights/">Mumbai to Varanasi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/pune-to-goa-flights/">Pune to Goa Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bangalore-to-chennai-flights/">Bangalore to Chennai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bangalore-to-jaipur-flights/">Bangalore to Jaipur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/chennai-to-bangalore-flights/">Chennai to Bangalore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/chennai-to-madurai-flights/">Chennai to Madurai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-indore-flights/">Delhi to Indore Flight<!-- --> </a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>Top Sectors</li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-jammu-flights/">Delhi to Jammu Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-varanasi-flights/">Delhi to Varanasi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/hyderabad-to-chennai-flights/">Hyderabad to Chennai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/hyderabad-to-mumbai-flights/">Hyderabad to Mumbai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/jaipur-to-mumbai-flights/">Jaipur to Mumbai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bangalore-to-srinagar-flights/">Bangalore to Srinagar Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bhopal-to-chennai-flights/">Bhopal to Chennai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/chandigarh-to-mumbai-flights/">Chandigarh to Mumbai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/coimbatore-to-ahmedabad-flights/">Coimbatore to Ahmedabad Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/coimbatore-to-bangalore-flights/">Coimbatore to Bangalore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/coimbatore-to-mumbai-flights/">Coimbatore to Mumbai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-chandigarh-flights/">Delhi to Chandigarh Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-coimbatore-flights/">Delhi to Coimbatore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-raipur-flights/">Delhi to Raipur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/hyderabad-to-kolkata-flights/">Hyderabad to Kolkata Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/hyderabad-to-vijayawada-flights/">Hyderabad to Vijaywada Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/lucknow-to-ahmedabad-flights/">Lucknow to Ahmedabad Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/madurai-to-chennai-flights/">Madurai to Chennai Flight<!-- --> </a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>Top Airline Sectors</li>
+                                        <li><a href="/flights/delhi-to-goa-indigo-airline-schedule/">Delhi to Goa Indigo Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/delhi-to-mumbai-indigo-airline-schedule/">Delhi to Mumbai Indigo Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/mumbai-to-delhi-air-india-airline-schedule/">Mumbai to Delhi Air India Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/delhi-to-mumbai-air-india-airline-schedule/">Delhi to Mumbai Air India Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/delhi-to-goa-air-india-airline-schedule/">Delhi to Goa Air India Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/mumbai-to-delhi-vistara-airline-schedule/">Mumbai to Delhi Vistara Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/bangalore-to-delhi-indigo-airline-schedule/">Bangalore to Delhi Indigo Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/delhi-to-mumbai-vistara-airline-schedule/">Delhi to Mumbai Vistara Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/delhi-to-bangalore-indigo-airline-schedule/">Delhi to Bangalore Indigo Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/mumbai-to-delhi-indigo-airline-schedule/">Mumbai to Delhi Indigo Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/delhi-to-hyderabad-spicejet-airline-schedule/">Delhi to Hyderabad Spicejet Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/delhi-to-bangalore-air-india-airline-schedule/">Delhi to Bangalore Air India Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/kolkata-to-delhi-indigo-airline-schedule/">Kolkata to Delhi Indigo Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/delhi-to-kolkata-indigo-airline-schedule/">Delhi to Kolkata Indigo Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/delhi-to-patna-indigo-airline-schedule/">Delhi to Patna Indigo Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/pune-to-delhi-indigo-airline-schedule/">Pune to Delhi Indigo Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/kolkata-to-bangalore-indigo-airline-schedule/">Kolkata to Bangalore Indigo Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/bangalore-to-delhi-air-india-airline-schedule/">Bangalore to Delhi Air India Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/bangalore-to-mumbai-indigo-airline-schedule/">Bangalore to Mumbai Indigo Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="/flights/mumbai-to-goa-indigo-airline-schedule/">Mumbai to Goa Indigo Flight<!-- --> </a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>Important Routes</li>
+                                        <li><a href="https://www.goibibo.com/flights/madurai-to-hyderabad-flights/">Madurai to Hyderabad Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-srinagar-flights/">Mumbai to Srinagar Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/pune-to-ranchi-flights/">Pune to Ranchi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/raipur-to-hyderabad-flights/">Raipur to Hyderabad Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/raipur-to-mumbai-flights/">Raipur to Mumbai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bhopal-to-hyderabad-flights/">Bhopal to Hyderabad Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bhubaneswar-to-chennai-flights/">Bhubaneshwar to Chennai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/chennai-to-nagpur-flights/">Chennai to Nagpur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/chennai-to-port-blair-flights/">Chennai to Port Blair Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/ernakulam-to-chennai-flights/">Cochin to Chennai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-mangalore-flights/">Delhi to Mangalore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/hyderabad-to-nagpur-flights/">Hyderabad to Nagpur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/jammu-to-delhi-flights/">Jammu to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/kolkata-to-aizawl-flights/">Kolkata to Aizawl Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/lucknow-to-hyderabad-flights/">Lucknow to Hyderabad Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/udaipur-to-delhi-flights/">Udaipur to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/agartala-to-delhi-flights/">Agartala to Delhi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bangalore-to-imphal-flights/">Bangalore to Imphal Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/imphal-to-guwahati-flights/">Imphal to Guwahati Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/imphal-to-kolkata-flights/">Imphal to Kolkata Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/indore-to-raipur-flights/">Indore to Raipur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/kozhikode-to-chennai-flights/">Kozhikode to Chennai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-imphal-flights/">Mumbai to Imphal Flight<!-- --> </a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>Trending Domestic Routes</li>
+                                        <li><a href="https://www.goibibo.com/flights/ahmedabad-to-mumbai-flights/">Ahmedabad to Mumbai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/siliguri-to-kolkata-flights/">Bagdogra to Kolkata Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bangalore-to-udaipur-flights/">Bangalore to Udaipur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bhopal-to-bangalore-flights/">Bhopal to Bangalore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bhubaneswar-to-mumbai-flights/">Bhubaneshwar to Mumbai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/chandigarh-to-chennai-flights/">Chandigarh to Chennai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/chennai-to-jaipur-flights/">Chennai to Jaipur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-vadodara-flights/">Delhi to Vadodara Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/goa-to-pune-flights/">Goa to Pune Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/hyderabad-to-coimbatore-flights/">Hyderabad to Coimbatore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/hyderabad-to-patna-flights/">Hyderabad to Patna Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/jaipur-to-bangalore-flights/">Jaipur to Bangalore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/lucknow-to-kolkata-flights/">Lucknow to Kolkata Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mangalore-to-bangalore-flights/">Mangalore to Bangalore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-coimbatore-flights/">Mumbai to Coimbatore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-indore-flights/">Mumbai to Indore Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-rajkot-flights/">Mumbai to Rajkot Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-surat-flights/">Mumbai to Surat Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-vijayawada-flights/">Mumbai to Vijaywada Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/pune-to-chennai-flights/">Pune to Chennai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/bhubaneswar-to-kolkata-flights/">Bhubaneshwar to Kolkata Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/delhi-to-kozhikode-flights/"> Delhi to Kozhikode Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/mumbai-to-jodhpur-flights/">Mumbai to Jodhpur Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/ranchi-to-mumbai-flights/">Ranchi to Mumbai Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/vadodara-to-chennai-flights/">Vadodara to Chennai Flight<!-- --> </a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>New Udaan Sectors</li>
+                                        <li><a href="https://www.goibibo.com/flights/guwahati-to-rupsi-flights/">Guwahati to Rupsi Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/rupsi-to-kolkata-flights/">Rupsi to Kolkata Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/guwahati-to-agartala-flights/">Guwahati to Agartala Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/agartala-to-dibrugarh-flights/">Agartala to Dibrugarh Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/guwahati-to-rupsi-flights/">Dibrugarh to Agartala Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/agartala-to-guwahati-flights/">Agartala to Guwahati Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/guwahati-to-pasighat-flights/">Guwahati to Pasighat Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/pasighat-to-shillong-flights/">Pasighat to Shillong Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/shillong-to-pasighat-flights/">Shillong to Pasighat Flight<!-- --> <!-- --> |</a></li>
+                                        <li><a href="https://www.goibibo.com/flights/pasighat-to-guwahati-flights/">Pasighat to Guwahati Flight<!-- --> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bell3">
+                            <div class="footer-app-links">
+                                <div class="follow-us">
+                                    <p>Follow Us</p>
+                                    <div class="social-icons">
+                                        <a target="_blank" href="http://www.facebook.com/goibibo" title="facebook" rel="noreferrer" aria-label="Facebook">
+                                            <span class="footer-sprite facebookIcon"><i class="bi bi-facebook" style="font-size: 20px; color: rgb(179, 179, 179);"></i></span>
+                                        </a>
+                                        <a target="_blank" href="http://twitter.com/goibibo" title="Twitter" rel="noreferrer" aria-label="Twitter">
+                                            <span class="footer-sprite twitterIcon"><i class="bi bi-twitter" style="font-size: 20px; color: rgb(179, 179, 179);"></i></span>
+                                        </a>
+                                        <a target="_blank" href="http://www.youtube.com/user/goibibo" title="youtube" rel="noreferrer" aria-label="youtube">
+                                            <span class="footer-sprite youTubeIcon"><i class="bi bi-youtube" style="font-size: 20px; color: rgb(179, 179, 179);"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="follow-us">
+                                    <p>Book Tickets faster. Download our mobile Apps</p>
+                                    <div class="store-icons">
+                                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.goibibo&amp;referrer=af_tranid%3DvxsPvRUmXy7VkUyrYCgpaQ%26pid%3Dmobile_site%26c%3Dm_header%26af_web_id%3Df6a83147-2300-4c5b-860d-d0a4e2e56160-c%26utm_source%3Dmobile_site%26utm_campaign%3Dm_header" rel="noreferrer">
+                                            <span class="footer-sprite playStoreIcon"><i class="bi bi-google-play" style="font-size: 30px; color:maroon"></i></span>
+                                        </a>
+                                        <a target="_blank" href="https://apps.apple.com/in/app/goibibo-flight-bus-hotel-booking/id631927169" rel="noreferrer">
+                                            <span class="footer-sprite appStoreIcon"><i class="bi bi-apple" style="font-size: 30px; color:maroon"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="payment-icons">
+                                    <span class="footer-sprite verifySign"><a href="#"><img src="images/scr1 (1).png" alt=""></a>
+                                     &nbsp;</span>
+                                    <span class="footer-sprite amricanIcon">
+                                        <a href="#"><img src="images/scr1 (2).png" alt=""></a>&nbsp;</span>
+                                    <span class="footer-sprite masterCardIcon">
+                                        <a href="#"><img src="images/scr1 (3).png" alt=""></a>&nbsp;</span>
+                                    <span class="footer-sprite visaIcon ">
+                                        <a href="#"><img src="images/scr1 (4).png" alt=""></a>&nbsp;</span>
+                                    <span class="footer-sprite ruPayIcon">
+                                        <a href="#"><img src="images/scr1 (5).png" alt=""></a>&nbsp;</span>
+                                    <span class="footer-sprite iataIcon">
+                                        <a href="#"><img src="images/scr1 (6).png" alt=""></a>&nbsp;</span>
+                                </div>
+                            </div>
+                            <div class="footer-copyrights">
+                                <div class="brand-name">
+                                    <a href="https://www.makemytrip.com/" target="_black">
+                                        <span class="footer-sprite mmtLogo">
+                                            <a href="#"><img src="images/scr2.png" alt=""></a>&nbsp;
+                                        </span>
+                                    </a>
+                                    <a href="https://www.redbus.in/" target="_black">
+                                        <span class="footer-sprite redBusLogo">
+                                            <a href="#"><img src="images/scr3.png" alt=""></a>&nbsp;
+                                        </span>
+                                    </a>
+                                </div>
+                                <span class="footpara2 light2">© <!-- -->2024<!-- --> Makemytrip (India) Private Limited. All rights reserved</span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>    
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.sliderp3').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+        });
+    </script>
+</body>
+</html>
